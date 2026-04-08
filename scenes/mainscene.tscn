@@ -160,6 +160,7 @@ shape = SubResource("RectangleShape2D_hm37i")
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=910371597]
 position = Vector2(248, 16)
+position_smoothing_enabled = true
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1515754176]
 position = Vector2(128, 288)
