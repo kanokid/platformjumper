@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="platformjumper"
+run/main_scene="uid://dwgv7mtf2e00r"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
