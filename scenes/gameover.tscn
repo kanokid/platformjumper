@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://rcifrbeoaq4m"]
+
+[node name="Gameover" type="Node2D" unique_id=2085582369]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1986908000]
+process_mode = 3
+layer = 2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=588891532]
+offset_left = 59.0
+offset_right = 1229.0
+offset_bottom = 664.0
+color = Color(0, 0, 0, 1)
+
+[node name="LineEdit" type="LineEdit" parent="CanvasLayer" unique_id=1100632914]
+offset_left = 59.0
+offset_right = 1211.0
+offset_bottom = 648.0
+theme_override_font_sizes/font_size = 200
+text = "Game Over"
+alignment = 1
+editable = false
+context_menu_enabled = false
+selecting_enabled = false
+flat = true
+
+[node name="Camera2D" type="Camera2D" parent="CanvasLayer" unique_id=443914142]
+position = Vector2(637, 333)

@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://b0f1v5qs84lwj" path="res://assets/charactermain.png" id="2_4c2fu"]
 [ext_resource type="Texture2D" uid="uid://bmmg0hb7g3jmy" path="res://assets/tilemap.png" id="3_mo382"]
 [ext_resource type="Texture2D" uid="uid://d3q2ysprmujs" path="res://assets/flag.png" id="4_4c2fu"]
+[ext_resource type="Script" uid="uid://b55yrv1ihtms7" path="res://scenes/flag.gd" id="5_mo382"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hm37i"]
 size = Vector2(219.15866, 2.551558)
@@ -180,22 +181,27 @@ scale = Vector2(2.77941, 2.1833332)
 texture = ExtResource("4_4c2fu")
 
 [node name="Area2D" type="Area2D" parent="goal" unique_id=6348796]
+script = ExtResource("5_mo382")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="goal/Area2D" unique_id=882727737]
 position = Vector2(1917.75, 344)
 shape = SubResource("RectangleShape2D_mo382")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1986908000]
-layer = 2
+[node name="Node" type="Node" parent="." unique_id=712950378]
 
-[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=588891532]
+[node name="CanvasLayer" type="CanvasLayer" parent="Node" unique_id=1986908000]
+process_mode = 3
+layer = 2
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="Node/CanvasLayer" unique_id=588891532]
 offset_left = -267.0
 offset_top = -78.0
 offset_right = 2315.0
 offset_bottom = 755.0
 color = Color(0, 0, 0, 1)
 
-[node name="LineEdit" type="LineEdit" parent="CanvasLayer" unique_id=1100632914]
+[node name="LineEdit" type="LineEdit" parent="Node/CanvasLayer" unique_id=1100632914]
 offset_right = 1152.0
 offset_bottom = 648.0
 theme_override_font_sizes/font_size = 200
