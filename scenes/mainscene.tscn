@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dwgv7mtf2e00r"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_katdn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hm37i"]
+size = Vector2(1, 1)
+
+[node name="main" type="Node" unique_id=440177937]
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=1337277971]
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1243183114]
+texture = SubResource("PlaceholderTexture2D_katdn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=960275220]
+shape = SubResource("RectangleShape2D_hm37i")
